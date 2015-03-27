@@ -1,5 +1,4 @@
 FROM java:7
-COPY /src /src
-WORKDIR /src
-RUN cd /src; javac HelloWorld.java
+COPY /bin /bin
+WORKDIR /bin
 CMD ["java", "HelloWorld"]
