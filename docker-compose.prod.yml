@@ -1,0 +1,6 @@
+javaclient:
+  image: trainingteam/hello-redis:1.0
+  links:
+    - redis:redisdb
+redis:
+  image: redis
